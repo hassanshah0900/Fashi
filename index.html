@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div class="info-bar">
+    <section class="info-bar">
       <div class="info-bar__content">
         <a href="#" class="btn btn--icon info-bar__email">
           <svg
@@ -157,10 +157,13 @@
             </a>
           </div>
         </div>
-        <select class="info-bar__lang">
-          <option value="english">English</option>
-          <option value="german">German</option>
-        </select>
+        <div class="dropdown info-bar__lang">
+          <img src="./assests/img/lang-flags/english.jpg" alt="Flag of USA" />
+          <select>
+            <option value="english">English</option>
+            <option value="german">German</option>
+          </select>
+        </div>
 
         <a href="#" class="btn btn--icon">
           <svg
@@ -191,9 +194,9 @@
           Login
         </a>
       </div>
-    </div>
+    </section>
     <div class="container">
-      <div class="logo-bar">
+      <section class="logo-bar">
         <img class="logo" src="./assests/img/logo.png" alt="An Image of Logo" />
         <div class="search-bar">
           <select class="search-bar__categories" name="" id="">
@@ -257,12 +260,31 @@
           </button>
           <span>$150.00</span>
         </div>
-      </div>
+      </section>
     </div>
 
     <nav class="nav">
+      <button class="btn nav__btn">
+        Menu
+        <svg
+          class="icon icon--white"
+          width="800px"
+          height="800px"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M4 6H20M4 12H20M4 18H20"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
       <div class="nav__links">
-        <div class="nav__departments">
+        <div class="dropdown dropdown--dark nav__departments">
           <svg
             class="icon icon--white"
             viewBox="0 0 24 24"
@@ -290,14 +312,12 @@
       </div>
     </nav>
 
-    <!-- <div style="height: 200px; background-color: black; width: 500px"></div> -->
-    <div class="hero-carousel">
+    <section class="hero-carousel">
       <div class="hero-section">
         <div class="hero-section__content">
           <h3
             data-aos="fade-up"
             data-aos-anchor=".hero-section__desc"
-            data-aos-delay="200"
             class="hero-section__subheading"
           >
             Bag.kids
@@ -305,18 +325,61 @@
           <h1
             data-aos="fade-up"
             data-aos-anchor=".hero-section__desc"
-            data-aos-delay="400"
+            data-aos-delay="200"
             class="hero-section__heading"
           >
             Black Friday
           </h1>
-          <p data-aos="fade-up" data-aos-delay="600" class="hero-section__desc">
+          <p data-aos="fade-up" data-aos-delay="400" class="hero-section__desc">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
             voluptatibus. Ab, nulla aliquam! Molestiae dolor.
           </p>
-          <!-- data-aos="fade-up"
-          data-aos-delay="800" -->
           <button
+            data-aos="fade-up"
+            data-aos-delay="600"
+            data-aos-anchor=".hero-section__desc"
+            class="btn btn--primary"
+          >
+            Shop Now
+          </button>
+        </div>
+        <div
+          data-aos="zoom-in"
+          data-aos-anchor=".hero-section__desc"
+          class="hero-section__decoration"
+        >
+          Sale 50%
+        </div>
+        <img
+          class="hero-section__img"
+          src="./assests/img/hero-pics/hero-2.jpg"
+          alt=""
+        />
+      </div>
+      <div class="hero-section">
+        <div class="hero-section__content">
+          <h3
+            data-aos="fade-up"
+            data-aos-anchor=".hero-section__desc"
+            class="hero-section__subheading"
+          >
+            Bag.kids
+          </h3>
+          <h1
+            data-aos="fade-up"
+            data-aos-anchor=".hero-section__desc"
+            data-aos-delay="200"
+            class="hero-section__heading"
+          >
+            Black Friday
+          </h1>
+          <p data-aos="fade-up" data-aos-delay="400" class="hero-section__desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
+            voluptatibus. Ab, nulla aliquam! Molestiae dolor.
+          </p>
+          <button
+            data-aos="fade-up"
+            data-aos-delay="600"
             data-aos-anchor=".hero-section__desc"
             class="btn btn--primary"
           >
@@ -336,27 +399,10 @@
           alt=""
         />
       </div>
-      <div class="hero-section">
-        <div class="hero-section__content">
-          <h3 data-aos="fade-up" class="hero-section__subheading">Bag.kids</h3>
-          <h1 data-aos="fade-up" class="hero-section__heading">Black Friday</h1>
-          <p data-aos="fade-up" class="hero-section__desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
-            voluptatibus. Ab, nulla aliquam! Molestiae dolor.
-          </p>
-          <button data-aos="fade-up" class="btn btn--primary">Shop Now</button>
-        </div>
-        <div class="hero-section__decoration">Sale 50%</div>
-        <img
-          class="hero-section__img"
-          src="./assests/img/hero-pics/hero-2.jpg"
-          alt=""
-        />
-      </div>
-    </div>
+    </section>
 
     <div class="container">
-      <div class="grid grid--3cols categories">
+      <section class="grid grid--3cols categories">
         <div style="background-color: black" tabindex="0" class="card">
           <img
             class="card__pic"
@@ -381,11 +427,11 @@
           />
           <div class="card__title">Men's</div>
         </div>
-      </div>
+      </section>
     </div>
 
     <div class="container">
-      <div class="display-section">
+      <section class="display-section">
         <div class="banner display-section__banner">
           <img
             src="assests/img/banner-pics/women-large.jpg"
@@ -649,11 +695,11 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
 
     <div class="container">
-      <div class="deal-section">
+      <section class="deal-section">
         <div class="deal-section__content-container">
           <div class="deal-section__content">
             <h2 class="heading">Deal of the Week</h2>
@@ -686,11 +732,11 @@
             <button class="btn btn--primary deal-section__btn">shop now</button>
           </div>
         </div>
-      </div>
+      </section>
     </div>
 
     <div class="container">
-      <div class="display-section">
+      <section class="display-section">
         <div class="display-section__carousel">
           <ul class="list list--horizontal display-section__tabs">
             <li><button class="tab tab--selected">Clothings</button></li>
@@ -954,10 +1000,10 @@
           <h4 class="banner__title">Men's</h4>
           <a href="#" class="banner__cta">Discover More</a>
         </div>
-      </div>
+      </section>
     </div>
 
-    <div class="insta-gallery">
+    <section class="insta-gallery">
       <div class="insta-post">
         <img
           src="./assests/img/Inta-posts/insta-1.jpg"
@@ -1180,10 +1226,10 @@
           <p>colorlib_Collection</p>
         </div>
       </div>
-    </div>
+    </section>
 
     <div class="container">
-      <div class="blog-section">
+      <section class="blog-section">
         <h2 class="heading blog-section__title">From the Blog</h2>
         <div class="grid grid--3cols">
           <div class="blog">
@@ -1394,10 +1440,10 @@
             </p>
           </div>
         </div>
-      </div>
+      </section>
     </div>
     <div class="container">
-      <div class="qualities">
+      <section class="qualities">
         <div class="media">
           <img
             src="./assests/img/icons/icon-1.png"
@@ -1431,9 +1477,9 @@
             <p class="media__desc">100% secure payment</p>
           </div>
         </div>
-      </div>
+      </section>
     </div>
-    <div class="sponsor-section">
+    <section class="sponsor-section">
       <div class="container">
         <div class="sponsors">
           <img
@@ -1458,8 +1504,8 @@
           />
         </div>
       </div>
-    </div>
-    <div class="footer-section">
+    </section>
+    <section class="footer-section">
       <div class="container">
         <footer class="grid grid--4cols footer">
           <ul class="list list--vertical">
@@ -1631,8 +1677,8 @@
           </ul>
         </footer>
       </div>
-    </div>
-    <div class="copyright-bar">
+    </section>
+    <section class="copyright-bar">
       <div class="container">
         <div class="copyright-bar__content">
           <p>
@@ -1645,7 +1691,7 @@
           />
         </div>
       </div>
-    </div>
+    </section>
 
     <script
       type="text/javascript"

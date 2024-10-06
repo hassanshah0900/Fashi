@@ -4,14 +4,9 @@
   margin: 0;
   padding: 0;
   border: none;
-  /* outline: none; */
   background: transparent;
   box-sizing: border-box;
 }
-
-/* *:focus-visible {
-  outline: 1px solid black;
-} */
 
 html {
   font-size: 62.5%;
@@ -40,14 +35,15 @@ img {
 p {
   color: var(--color-body);
 }
-/* Styles for Container */
+
+/*********************************** CONTAINER ***********************************/
 .container {
   max-width: 1240px;
   margin: auto;
   padding: 0 2rem;
 }
 
-/* Styles for Icon */
+/*********************************** ICON ***********************************/
 .icon {
   width: 20px;
   height: 20px;
@@ -67,7 +63,7 @@ p {
   height: 15px;
 }
 
-/* Styles for Buttons */
+/*********************************** BUTTON ***********************************/
 .btn {
   background: transparent;
   border: none;
@@ -148,7 +144,7 @@ p {
   }
 }
 
-/*  Styles for Media Object */
+/*********************************** MEDIA OBJECT ***********************************/
 .media {
   align-items: center;
   display: flex;
@@ -197,7 +193,7 @@ p {
   }
 }
 
-/* Styles for Insta Post */
+/*********************************** INSTAGRAM POST ***********************************/
 .insta-post {
   position: relative;
   width: max-content;
@@ -241,7 +237,7 @@ p {
   height: 20%;
 }
 
-/*  Styles for Heading */
+/*********************************** HEADING ***********************************/
 .heading {
   color: var(--color-heading);
   font-size: 3rem;
@@ -262,7 +258,7 @@ p {
   width: 6rem;
 }
 
-/*  Styles for Tab */
+/*********************************** TAB ***********************************/
 .tab {
   color: var(--color-body-light);
   cursor: pointer;
@@ -294,7 +290,7 @@ p {
   color: var(--color-heading);
 }
 
-/*  Styles for Card */
+/*********************************** CARD ***********************************/
 .card {
   height: 100%;
   position: relative;
@@ -339,7 +335,7 @@ p {
   width: 80%;
 }
 
-/* Styles for Tag */
+/*********************************** TAG ***********************************/
 .tag {
   color: #fff;
   font-size: 1.2rem;
@@ -355,7 +351,7 @@ p {
   background-color: rgb(176, 41, 41);
 }
 
-/* Styles for List */
+/*********************************** LIST ***********************************/
 .list {
   display: flex;
   justify-content: center;
@@ -374,7 +370,7 @@ p {
   gap: 2rem;
 }
 
-/* Styles for Blog */
+/*********************************** BLOG ***********************************/
 .blog {
   width: 100%;
   text-align: start;
@@ -421,7 +417,7 @@ p {
   }
 }
 
-/* Styles for Product */
+/*********************************** PRODUCT ***********************************/
 .product {
   width: 100%;
   text-align: center;
@@ -506,6 +502,7 @@ p {
   text-transform: capitalize;
   letter-spacing: 0;
 }
+
 .product__quick-view {
   width: 100%;
 }
@@ -527,12 +524,12 @@ p {
   }
 }
 
-/* Styles for Product Carousel */
+/*********************************** PRODUCT CAROUSEL ***********************************/
 .product-carousel *:focus-visible {
   outline: none;
 }
 
-/* Styles for Banner */
+/*********************************** BANNER ***********************************/
 .banner {
   position: relative;
   width: 100%;
@@ -572,7 +569,7 @@ p {
   letter-spacing: 1.5px;
 }
 
-/* Styles for Timer */
+/*********************************** TIMER ***********************************/
 .timer {
   align-items: center;
   display: flex;
@@ -607,7 +604,7 @@ p {
   text-transform: uppercase;
 }
 
-/* Styles for Search Bar */
+/*********************************** SEARCH BAR ***********************************/
 .search-bar {
   border: 1px solid var(--color-body-light);
   display: flex;
@@ -635,7 +632,7 @@ p {
   padding: 1rem;
 }
 
-/* Styles for Grid */
+/*********************************** GRID ***********************************/
 .grid {
   display: grid;
 }
@@ -673,320 +670,62 @@ p {
   }
 }
 
-/* Logo */
-.logo {
-  width: 80px;
-}
-
-/************************************* INFO BAR  ***************************************/
-.info-bar {
-  border: 1px solid var(--color-body-light);
-  padding: 0 2rem;
-}
-
-.info-bar__content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 4rem;
-  gap: 2rem;
-  max-width: var(--content-width-small);
-  margin: auto;
-}
-
-.info-bar__social-links {
-  display: flex;
-  gap: 1.5rem;
-}
-
-.info-bar__mid-section {
-  flex-grow: 1;
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  border-left: 1px solid var(--color-body-light);
-  border-right: 1px solid var(--color-body-light);
-  padding: 0 2rem;
-}
-
-.info-bar__lang {
-  border-right: 1px solid var(--color-body-light);
-  height: 100%;
-}
-
-@media screen and (max-width: 768px) {
-  .info-bar__mid-section {
-    padding: 0 1rem;
-  }
-
-  .info-bar__content,
-  .info-bar__social-links {
-    gap: 1rem;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .info-bar__content {
-    justify-content: end;
-  }
-
-  .info-bar__email,
-  .info-bar__mid-section {
-    display: none;
-  }
-}
-/**************************************** LOGO BAR **************************************/
-.logo-bar {
-  align-items: center;
-  display: flex;
-  gap: 2rem;
-  height: 8rem;
-  justify-content: space-between;
-  max-width: var(--content-width-small);
-  margin: auto;
-}
-
-.logo-bar__purchase-detail {
-  align-items: center;
-  display: flex;
-  font-weight: 600;
-  gap: 1.5rem;
-}
-
-.logo-bar__btn {
+/*********************************** DROPDOWN ***********************************/
+.dropdown {
+  width: max-content;
+  min-width: max-content;
   position: relative;
-}
-
-.logo-bar__btn span {
-  align-items: center;
-  background-color: var(--color-primary);
-  border-radius: 100%;
-  color: #fff;
-  display: flex;
-  font-size: 1rem;
-  height: 1.5rem;
-  justify-content: center;
-  position: absolute;
-  right: -8px;
-  top: -5px;
-  width: 1.5rem;
-}
-
-@media screen and (max-width: 500px) {
-  .logo-bar {
-    flex-direction: column;
-    height: auto;
-    padding: 2rem 0;
-  }
-
-  .logo-bar .search-bar {
-    width: 100%;
-  }
-}
-
-/* navbar */
-.nav {
-  background-color: var(--color-secondary);
-  padding: 0 2rem;
-}
-
-.nav__links {
-  align-items: center;
-  display: flex;
-  height: 4.5rem;
-  justify-content: center;
-  max-width: var(--content-width-small);
-  margin: auto;
-}
-
-.nav__link {
-  align-items: center;
-  border: 1px solid var(--color-body-light);
-  color: #fff;
-  display: flex;
-  flex-grow: 1;
-  font-weight: normal;
-  height: 100%;
-  justify-content: center;
-  outline: none;
-  transition: 0.2s;
-}
-
-.nav__link:focus-visible {
-  background-color: var(--color-body);
-}
-
-.nav__departments {
-  align-items: center;
-  background-color: #474545;
-  display: flex;
-  flex-grow: 1;
-  height: 100%;
-  justify-content: center;
-  padding: 0 0.5rem;
-}
-
-.nav__departments select {
-  background: transparent;
-  color: #fff;
-  outline: none;
-  padding: 1.2rem;
-  text-transform: uppercase;
-}
-
-/* Categories */
-.categories {
-  margin: 4rem auto;
-}
-
-/* IntaGallery */
-.insta-gallery {
-  display: flex;
-  justify-content: center;
-  margin: 4rem 0;
-  min-height: 200px;
-}
-
-@media screen and (max-width: 768px) {
-  .insta-gallery {
-    flex-wrap: wrap;
-  }
-
-  .insta-gallery .insta-post {
-    width: 33%;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .insta-gallery .insta-post {
-    width: 50%;
-  }
-}
-
-/* Blogs */
-.blog-section {
-  margin: 8rem auto;
-  max-width: var(--content-width-small);
-  text-align: center;
-}
-
-@media screen and (max-width: 510px) {
-  .blog-section {
-    margin: 6rem auto;
-  }
-}
-
-/* Qualities */
-.qualities {
-  align-items: stretch;
-  border: 1px solid var(--color-body-light);
-  display: flex;
-  justify-content: space-around;
-  margin: 8rem auto;
-  max-width: var(--content-width-small);
-}
-
-@media screen and (max-width: 510px) {
-  .qualities {
-    flex-direction: column;
-    margin: 5rem auto;
-  }
-
-  .qualities .media {
-    outline: none;
-  }
-}
-
-/* Sponsor Carousel */
-.sponsor-section {
-  background-color: var(--color-secondary);
-  padding: 2.5rem 0;
-}
-
-.sponsors {
-  align-items: center;
-  display: flex;
-  gap: 3rem;
-  justify-content: space-between;
-  margin: auto;
-  max-width: var(--content-width-small);
-}
-
-.sponsors img {
-  width: 15%;
-  max-width: 125px;
-}
-
-@media screen and (max-width: 768px) {
-  .sponsor-section {
-    padding: 1.5rem 0;
-  }
-}
-
-@media screen and (max-width: 510px) {
-  .sponsors img {
-    width: 30%;
-  }
-
-  .sponsors img:nth-child(even) {
-    display: none;
-  }
-}
-
-/* Deal Section */
-.deal-section {
-  background: url("./assests/img/backgrounds/time-bg.jpg");
-  background-size: cover;
-  background-position: center;
-  margin: 4rem auto;
-  padding: 5rem;
-}
-
-.deal-section__content-container {
-  max-width: var(--content-width-small);
-  margin: auto;
-}
-
-.deal-section__content {
-  max-width: 40%;
-  text-align: center;
-}
-
-.deal-section__desc {
-  margin-bottom: 1.5rem;
-  line-height: 1.5;
-}
-
-.deal-section__price {
-  color: var(--color-primary);
-  font-size: 2rem;
-  font-weight: 600;
-  margin-bottom: 3.5rem;
-}
-
-.deal-section__price span {
-  color: var(--color-body);
   font-size: 1.4rem;
-  font-weight: normal;
 }
 
-.deal-section__btn {
-  margin-top: 3.5rem;
+.dropdown img,
+.dropdown .icon {
+  left: 1rem;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  translate: 0 -50%;
 }
 
-@media screen and (max-width: 768px) {
-  .deal-section__content {
-    max-width: 70%;
-  }
+.dropdown select {
+  outline: none;
+  appearance: none;
+  background-color: #fff;
+  color: var(--color-heading);
+  cursor: pointer;
+  height: 100%;
+  padding: 0.5rem 4rem;
+  width: 100%;
 }
 
-@media screen and (max-width: 500px) {
-  .deal-section__content {
-    max-width: 100%;
-  }
+.dropdown::after {
+  content: "";
+  border: 0.5rem solid transparent;
+  border-top-color: var(--color-secondary);
+  pointer-events: none;
+  position: absolute;
+  right: 1rem;
+  top: 40%;
 }
 
-/*  Styles for Sliders specific to products */
+.dropdown select:focus-visible {
+  outline: 1px solid #000;
+}
+
+.dropdown--dark select {
+  background-color: var(--color-secondary);
+  color: #fff;
+}
+
+.dropdown--dark::after {
+  border-top-color: #fff;
+}
+
+.dropdown--dark select:focus-visible {
+  outline: 1px solid #fff;
+}
+
+/*********************************** SLIDER STYLES FOR PRODUCTS ***********************************/
 .slick-slider {
   max-width: 100%;
   padding: 4rem;
@@ -1070,7 +809,365 @@ p {
   }
 }
 
-/* Display Section */
+/*********************************** LOGO ***********************************/
+.logo {
+  width: 80px;
+}
+
+/*********************************** INFO BAR SECTION ***********************************/
+.info-bar {
+  border: 1px solid var(--color-body-light);
+  padding: 0 2rem;
+}
+
+.info-bar__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  gap: 2rem;
+  max-width: var(--content-width-small);
+  margin: auto;
+}
+
+.info-bar__social-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.info-bar__mid-section {
+  flex-grow: 1;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-left: 1px solid var(--color-body-light);
+  border-right: 1px solid var(--color-body-light);
+  padding: 0 2rem;
+}
+
+.info-bar__lang {
+  border-right: 1px solid var(--color-body-light);
+  height: 100%;
+  max-width: max-content;
+}
+
+@media screen and (max-width: 768px) {
+  .info-bar__mid-section {
+    padding: 0 1rem;
+  }
+
+  .info-bar__content,
+  .info-bar__social-links {
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .info-bar__content {
+    justify-content: end;
+  }
+
+  .info-bar__email,
+  .info-bar__mid-section {
+    display: none;
+  }
+}
+
+/*********************************** LOGO BAR SECTION ***********************************/
+.logo-bar {
+  align-items: center;
+  display: flex;
+  gap: 2rem;
+  height: 8rem;
+  justify-content: space-between;
+  max-width: var(--content-width-small);
+  margin: auto;
+}
+
+.logo-bar__purchase-detail {
+  align-items: center;
+  display: flex;
+  font-weight: 600;
+  gap: 1.5rem;
+}
+
+.logo-bar__btn {
+  position: relative;
+}
+
+.logo-bar__btn span {
+  align-items: center;
+  background-color: var(--color-primary);
+  border-radius: 100%;
+  color: #fff;
+  display: flex;
+  font-size: 1rem;
+  height: 1.5rem;
+  justify-content: center;
+  position: absolute;
+  right: -8px;
+  top: -5px;
+  width: 1.5rem;
+}
+
+@media screen and (max-width: 650px) {
+  .logo-bar {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem 0;
+  }
+
+  .logo-bar .search-bar {
+    width: 100%;
+  }
+
+  .logo-bar__purchase-detail {
+    align-self: flex-start;
+  }
+}
+
+/*********************************** NAVBAR SECTION ***********************************/
+.nav {
+  background-color: var(--color-secondary);
+  padding: 0 2rem;
+}
+
+.nav__btn {
+  display: none;
+}
+
+.nav__links {
+  align-items: center;
+  display: flex;
+  height: 4.5rem;
+  justify-content: center;
+  max-width: var(--content-width-small);
+  margin: auto;
+}
+
+.nav__link {
+  align-items: center;
+  border: 1px solid var(--color-body-light);
+  color: #fff;
+  display: flex;
+  flex-grow: 1;
+  font-weight: normal;
+  height: 100%;
+  justify-content: center;
+  outline: none;
+  transition: 0.2s;
+}
+
+.nav__link:focus-visible {
+  background-color: var(--color-body);
+}
+
+.nav__departments {
+  height: 100%;
+}
+
+.nav__departments select {
+  background-color: #494949;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+  .nav__links {
+    height: 3.5rem;
+  }
+
+  .nav__link {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+
+  .nav__departments {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .nav {
+    width: max-content;
+    margin-left: auto;
+    height: 0;
+  }
+
+  .nav__btn {
+    translate: 0 -140%;
+    display: flex;
+    color: #ffd;
+    background-color: var(--color-heading);
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1rem;
+    transition: 0.2s;
+  }
+
+  .nav__btn:hover,
+  .nav__btn:focus-visible {
+    background-color: var(--color-primary);
+  }
+
+  .nav__links {
+    display: none;
+  }
+}
+
+/*********************************** CATEGORIES SECTION ***********************************/
+.categories {
+  margin: 4rem auto;
+}
+
+/*********************************** INSTAGRAM GALLERY SECTION ***********************************/
+.insta-gallery {
+  display: flex;
+  justify-content: center;
+  margin: 4rem 0;
+  min-height: 200px;
+}
+
+@media screen and (max-width: 768px) {
+  .insta-gallery {
+    flex-wrap: wrap;
+  }
+
+  .insta-gallery .insta-post {
+    width: 33%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .insta-gallery .insta-post {
+    width: 50%;
+  }
+}
+
+/*********************************** BLOG SECTION ***********************************/
+.blog-section {
+  margin: 8rem auto;
+  max-width: var(--content-width-small);
+  text-align: center;
+}
+
+@media screen and (max-width: 510px) {
+  .blog-section {
+    margin: 6rem auto;
+  }
+}
+
+/*********************************** QUALITITES SECTION ***********************************/
+.qualities {
+  align-items: stretch;
+  border: 1px solid var(--color-body-light);
+  display: flex;
+  justify-content: space-around;
+  margin: 8rem auto;
+  max-width: var(--content-width-small);
+}
+
+@media screen and (max-width: 510px) {
+  .qualities {
+    flex-direction: column;
+    margin: 5rem auto;
+  }
+
+  .qualities .media {
+    outline: none;
+  }
+}
+
+/*********************************** SPONSOR CAROUSEL SECTION ***********************************/
+.sponsor-section {
+  background-color: var(--color-secondary);
+  padding: 2.5rem 0;
+}
+
+.sponsors {
+  align-items: center;
+  display: flex;
+  gap: 3rem;
+  justify-content: space-between;
+  margin: auto;
+  max-width: var(--content-width-small);
+}
+
+.sponsors img {
+  width: 15%;
+  max-width: 125px;
+}
+
+@media screen and (max-width: 768px) {
+  .sponsor-section {
+    padding: 1.5rem 0;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .sponsors img {
+    width: 30%;
+  }
+
+  .sponsors img:nth-child(even) {
+    display: none;
+  }
+}
+
+/*********************************** DEAL SECTION ***********************************/
+.deal-section {
+  background: url("./assests/img/backgrounds/time-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 4rem auto;
+  padding: 5rem;
+}
+
+.deal-section__content-container {
+  max-width: var(--content-width-small);
+  margin: auto;
+}
+
+.deal-section__content {
+  max-width: 40%;
+  text-align: center;
+}
+
+.deal-section__desc {
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.deal-section__price {
+  color: var(--color-primary);
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 3.5rem;
+}
+
+.deal-section__price span {
+  color: var(--color-body);
+  font-size: 1.4rem;
+  font-weight: normal;
+}
+
+.deal-section__btn {
+  margin-top: 3.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .deal-section__content {
+    max-width: 70%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .deal-section__content {
+    max-width: 100%;
+  }
+}
+
+/*********************************** DISPLAY SECTION ***********************************/
 .display-section {
   align-items: center;
   display: flex;
@@ -1102,7 +1199,7 @@ p {
   }
 }
 
-/* Hero Section */
+/*********************************** HERO SECTION ***********************************/
 .hero-carousel.slick-slider {
   padding: 0;
 }
@@ -1114,6 +1211,7 @@ p {
 
 .hero-section__img {
   width: 100%;
+  min-width: 1000px;
 }
 
 .hero-section {
@@ -1169,7 +1267,38 @@ p {
   width: 100px;
 }
 
-/* Footer section */
+@media screen and (max-width: 950px) {
+  .hero-section__content {
+    left: 0;
+    transform: translate(0, -50%);
+    margin-left: 4rem;
+  }
+
+  .hero-section__heading {
+    font-size: 5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero-carousel .slick-arrow {
+    margin: 0.5rem;
+  }
+
+  .hero-section__decoration {
+    left: 450px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hero-section__decoration {
+    display: none;
+  }
+
+  .hero-section__desc {
+    max-width: 40%;
+  }
+}
+
+/*********************************** FOOTER SECTION ***********************************/
 .footer-section {
   background-color: #000;
   padding: 5rem 0;
@@ -1242,7 +1371,7 @@ p {
   background-color: var(--color-body-light);
 }
 
-/* Copyright bar */
+/*********************************** COPYRIGHT BAR SECTION ***********************************/
 .copyright-bar {
   font-size: 1.4rem;
   background-color: #000;
@@ -1268,6 +1397,7 @@ p {
     flex-direction: column;
     text-align: center;
   }
+
   .copyright-bar__content img {
     width: 60%;
   }
